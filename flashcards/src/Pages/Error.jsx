@@ -4,7 +4,7 @@ import '../style/error.css'
 function Error (){
 return(
     <>
-    <img className='error' src="assets/error2.jpg" alt="error" />
+    <img className='error' src="assets/error.jpg" alt="error" />
     </>
 )
 }

@@ -1,5 +1,16 @@
 .error {
-    width: 60%;
-    margin-top: 10%;
+    width: 50%;
     margin: o auto;
+}
+
+@media screen and (min-width: 767px) and (max-width: 1279px){
+    .error {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .error {
+        width: 100%;
+    }
 }
