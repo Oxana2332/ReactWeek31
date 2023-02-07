@@ -13,14 +13,15 @@ function Game() {
 
     function handlerPrev() {
         let copyCount = count
+        console.log (copyCount)
         copyCount--
-        copyCount < 0 ? setCount(count) : setCount(copyCount)
+        copyCount < 0 ? setCount(words.length - 1) : setCount(copyCount)
     }
 
     function handlerNext() {
         let copyCount = count
         copyCount++
-        copyCount >= words.length ? alert('Карт больше нет.') : setCount(copyCount)
+        copyCount >= words.length ? setCount(0) : setCount(copyCount)
     }
 
     
