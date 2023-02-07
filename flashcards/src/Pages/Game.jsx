@@ -13,7 +13,6 @@ function Game() {
 
     function handlerPrev() {
         let copyCount = count
-        console.log (copyCount)
         copyCount--
         copyCount < 0 ? setCount(words.length - 1) : setCount(copyCount)
     }
@@ -24,7 +23,6 @@ function Game() {
         copyCount >= words.length ? setCount(0) : setCount(copyCount)
     }
 
-    
     if (!words)
         return <h1>Loading...</h1>
 
