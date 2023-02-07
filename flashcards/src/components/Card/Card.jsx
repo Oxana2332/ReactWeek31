@@ -1,16 +1,19 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import './card.css'
 import '../../style/variables.css'
 
 
 function Card({item}) {
     const {english, transcription, russian} = item;
-
     const [pressed, setPressed] = useState(false);
 
     const handleChange = () => {
     setPressed(!pressed);
 };
+
+    useEffect(() => {
+    setPressed(false);
+}, [item])
 
 return (
     <div>
