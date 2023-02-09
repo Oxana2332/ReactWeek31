@@ -3,12 +3,13 @@ import './card.css'
 import '../../style/variables.css'
 
 
-function Card({item}) {
+function Card({item, handlePressed}) {
     const {english, transcription, russian} = item;
     const [pressed, setPressed] = useState(false);
 
     const handleChange = () => {
     setPressed(!pressed);
+    handlePressed()
 };
 
     useEffect(() => {

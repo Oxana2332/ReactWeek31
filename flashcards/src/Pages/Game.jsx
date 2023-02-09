@@ -6,10 +6,20 @@ import data from '../data/data.json'
 function Game() {
     const [words, setWords] = useState(false)
     const [count, setCount] = useState(0)
+    const [learnedWords, setLearnedWords] = useState(0)
+
 
     useEffect(() => {
         setWords(data)
     }, [])
+
+    function handlePressed() {
+        setLearnedWords((prevCount) => {
+        return prevCount + 1
+        })
+    }
+
+    console.log(learnedWords)
 
     function handlerPrev() {
         let copyCount = count
@@ -29,7 +39,7 @@ function Game() {
     else return (
         <div className='conteinerCard'>
             <button className='button_prev' onClick={handlerPrev}>&#8249;</button>
-            <Card key={words.id} item={words[count]} />
+            <Card key={words.id} item={words[count]} handlePressed={handlePressed} />
             <button className='button_next' onClick={handlerNext}>&#8250;</button>
         </div>
     )
