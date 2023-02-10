@@ -29,7 +29,7 @@
     margin-top: 1.5%;
     background-image: url("../../../public/assets/editButton.svg");
     background-repeat: no-repeat;
-    background-position: center; 
+    background-position: center;
 }
 
 .del {
@@ -46,7 +46,6 @@
     color: black;
 }
 
-
 .button:active {
     box-shadow: var(--shadowActive);
 }
@@ -58,10 +57,9 @@
     color: black;
 }
 
-.word:active  {
+.word:active {
     box-shadow: var(--shadowActive);
 }
-
 
 .word_input {
     width: 100%;
@@ -75,7 +73,7 @@
 .save {
     background-image: url("../../../public/assets/saveButton.svg");
     background-repeat: no-repeat;
-    background-position: center; 
+    background-position: center;
     height: 5vh;
 }
 
@@ -96,6 +94,6 @@
     background-color: var(--focusWord);
 }
 
-.word_input:active  {
+.word_input:active {
     box-shadow: var(--shadowActive);
 }

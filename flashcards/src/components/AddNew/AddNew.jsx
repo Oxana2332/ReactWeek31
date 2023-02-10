@@ -13,14 +13,14 @@ function AddNew() {
 
   return (
     <div>
-      {pressed ? ( <div className='wordItem'>
+      {pressed ? (<div className='wordItem'>
         <input className='word_input' type="text" />
         <input className='word_input' type="text" />
         <input className='word_input' type="text" />
         <input className='word_input' type="text" />
         <button className='button save'></button>
         <button className='button cancel' onClick={cancelEdit}></button>
-    </div>) : (<div className='button new' onClick={handleChange}></div>
+      </div>) : (<div className='button new' onClick={handleChange}></div>
       )}
     </div>
   )

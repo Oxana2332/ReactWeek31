@@ -10,32 +10,32 @@ function WordItem({ item, editWordItem }) {
     const [valueRussian, setValueRussian] = useState('');
     const [valueTags, setValueTags] = useState('');
 
-    useEffect(()=>{
+    useEffect(() => {
         setValueEnglish(english)
         setValueTranscription(transcription)
         setValueRussian(russian)
         setValueTags(tags)
     }, [item])
 
-    function handlerEnglish(e){
+    function handlerEnglish(e) {
         setValueEnglish(e.target.value)
     }
-    function handlerTranscription(e){
+    function handlerTranscription(e) {
         setValueTranscription(e.target.value)
     }
-    function handlerRussian(e){
+    function handlerRussian(e) {
         setValueRussian(e.target.value)
     }
-    function handlerTags(e){
+    function handlerTags(e) {
         setValueTags(e.target.value)
     }
 
-    function saveWordItem(){
-        editWordItem(valueEnglish,valueTranscription,valueRussian,valueTags,id)
+    function saveWordItem() {
+        editWordItem(valueEnglish, valueTranscription, valueRussian, valueTags, id)
         setOpenInput(!openInput)
     }
 
-    function cancelWordItem(){
+    function cancelWordItem() {
         setOpenInput(!openInput)
         setValueEnglish(english)
         setValueTranscription(transcription)
@@ -58,7 +58,7 @@ function WordItem({ item, editWordItem }) {
                     <div className='word'>{valueTranscription}</div>
                     <div className='word'>{valueRussian}</div>
                     <div className='word'>{valueTags}</div>
-                    <button className='button edit' onClick={()=>(setOpenInput(!openInput))}></button>
+                    <button className='button edit' onClick={() => (setOpenInput(!openInput))}></button>
                     <button className='button del'></button>
                 </div>)}
         </div>

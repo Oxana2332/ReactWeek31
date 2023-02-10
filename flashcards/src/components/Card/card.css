@@ -35,7 +35,7 @@
     border-radius: 20px;
     font-family: var(--basicFont);
     background-color: var(--buttonGreen);
-    color: var(--focusBasicLight); 
+    color: var(--focusBasicLight);
     font-size: var(--fontText);
     line-height: 0.9;
 }

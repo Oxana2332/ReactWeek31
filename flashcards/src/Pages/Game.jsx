@@ -15,7 +15,7 @@ function Game() {
 
     function handlePressed() {
         setLearnedWords((prevCount) => {
-        return prevCount + 1
+            return prevCount + 1
         })
     }
 

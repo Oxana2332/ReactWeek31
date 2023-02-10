@@ -23,7 +23,7 @@
     width: 5vw;
     background-image: url("../../../public/assets/addButton.svg");
     background-repeat: no-repeat;
-    background-position: center; 
+    background-position: center;
 }
 
 .button:hover {

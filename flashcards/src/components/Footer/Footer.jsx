@@ -7,7 +7,7 @@ function Footer() {
 
   return (
     <footer className='footer'>
-    Copyright &copy; {today.getFullYear()}
+      Copyright &copy; {today.getFullYear()}
     </footer>
   )
 }

@@ -26,6 +26,6 @@
     text-decoration: underline;
 }
 
-.active:active  {
+.active:active {
     box-shadow: var(--shadowActive);
 }

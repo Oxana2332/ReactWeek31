@@ -14,11 +14,12 @@ function App() {
         <NavLink className="header_link" end to='/'><img src='assets/logo.svg' alt='logo' /></NavLink>
         <NavLink className="header_link" end to='/game'>Game</NavLink>
       </header>
-<Routes>
-  <Route path='/' element={<Home/>} />
-  <Route path='/game' element={<Game/>} />
-  <Route path='*' element={<Error/>} />
-</Routes>
+
+      <Routes>
+        <Route path='/' element={<Home/>} />
+        <Route path='/game' element={<Game/>} />
+        <Route path='*' element={<Error/>} />
+      </Routes>
 
       <Footer />
     </div>
