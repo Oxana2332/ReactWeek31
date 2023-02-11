@@ -97,3 +97,33 @@
 .word_input:active {
     box-shadow: var(--shadowActive);
 }
+
+@media screen and (min-width: 375px) and (max-width: 767px) {
+    .word {
+        width: 50%;
+        font-size: 0.8em;
+    }
+
+    .word_input {
+        width: 50%;
+    }
+
+    .button {
+        width: 10%;
+    }
+}
+
+@media screen and (max-width: 374px) {
+    .word {
+        width: 45%;
+        font-size: 0.7em;
+    }
+
+    .word_input {
+        width: 40%;
+    }
+
+    .button {
+        width: 10%;
+    }
+}

@@ -25,3 +25,27 @@
     color: #00000000;
     font-family: var(--basicFont);
 }
+
+@media screen and (min-width: 375px) and (max-width: 767px) {
+    .dictionary_title {
+        font-size: 1em;
+    }
+
+    .dictionary_count {
+        display: flex;
+        flex-direction: row;
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 374px) {
+    .dictionary_title {
+        font-size: 1em;
+    }
+
+    .dictionary_count {
+        display: flex;
+        flex-direction: row;
+        width: 85%;
+    }
+}

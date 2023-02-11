@@ -36,3 +36,10 @@
 .button:active {
     box-shadow: var(--shadowActive);
 }
+
+@media screen and (min-width: 375px) and (max-width: 767px) {
+    .new {
+        height: 3vh;
+        width: 4vw;
+    }
+}

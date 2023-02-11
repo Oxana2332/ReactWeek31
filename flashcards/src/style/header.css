@@ -29,3 +29,10 @@
 .active:active {
     box-shadow: var(--shadowActive);
 }
+
+@media screen and (max-width: 374px) {
+    .header_link {
+        margin: 5%;
+        padding: 2%;
+    }
+}
