@@ -8,8 +8,8 @@ import '../style/variables.css'
 
 
 function Home() {
-
-    const [words, setWords] = useState([]);
+const [words, setWords] = useState([]);
+const titleArr = ['english', 'transcription', 'russian', 'topic']
 
     useEffect(() => {
         setWords(data)
@@ -31,10 +31,9 @@ function Home() {
     return (
         <div className='dictionary'>
             <div className='dictionary_count'>
-                <div className='dictionary_title' type="text" value='english'>english</div>
-                <div className='dictionary_title' type="text" value='transcription'>transcription</div>
-                <div className='dictionary_title' type="text" value='russian'>russian</div>
-                <div className='dictionary_title' type="text" value='topic'>topic</div>
+                {titleArr.map((elTitle) =>{
+                    return <div key={elTitle} className='dictionary_title' type="text" value={elTitle}>{elTitle}</div>
+                })}
             </div>
             <AddNew />
             {
