@@ -8,7 +8,6 @@ function Game() {
     const [count, setCount] = useState(0)
     const [learnedWords, setLearnedWords] = useState(0)
 
-
     useEffect(() => {
         setWords(data)
     }, [])
@@ -18,8 +17,6 @@ function Game() {
             return prevCount + 1
         })
     }
-
-    console.log(learnedWords)
 
     function handlerPrev() {
         let copyCount = count
