@@ -101,11 +101,12 @@
 @media screen and (min-width: 375px) and (max-width: 767px) {
     .word {
         width: 50%;
-        font-size: 0.8em;
+        font-size: var(--fontTablet);
     }
 
     .word_input {
         width: 50%;
+        font-size: var(--fontTablet);
     }
 
     .button {
@@ -116,11 +117,12 @@
 @media screen and (max-width: 374px) {
     .word {
         width: 45%;
-        font-size: 0.7em;
+        font-size: var(--fontmobile);
     }
 
     .word_input {
         width: 40%;
+        font-size: var(--fontmobile);
     }
 
     .button {

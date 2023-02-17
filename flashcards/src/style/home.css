@@ -28,7 +28,7 @@
 
 @media screen and (min-width: 375px) and (max-width: 767px) {
     .dictionary_title {
-        font-size: 1em;
+        font-size: var(--fontTitleAdaptive);
     }
 
     .dictionary_count {
@@ -40,7 +40,7 @@
 
 @media screen and (max-width: 374px) {
     .dictionary_title {
-        font-size: 1em;
+        font-size: var(--fontTitleAdaptive);
     }
 
     .dictionary_count {

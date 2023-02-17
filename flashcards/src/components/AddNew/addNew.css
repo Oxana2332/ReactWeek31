@@ -37,9 +37,9 @@
     box-shadow: var(--shadowActive);
 }
 
-@media screen and (min-width: 375px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
     .new {
-        height: 3vh;
-        width: 4vw;
+        height: 5vh;
+        width: 8vw;
     }
 }

@@ -15,4 +15,7 @@
     /* sizes */
     --fontTitle: 2.2em;
     --fontText: 1.3em;
+    --fontTitleAdaptive: 1em;
+    --fontmobile: 0.7em;
+    --fontTablet: 0.8em;
 }
